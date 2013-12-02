@@ -88,6 +88,11 @@ module Fog
           end
         end
 
+        def tags
+          requires :key
+          service.get_bucket_tagging(key).body['BucketTagging']
+        end
+
         def save
           requires :key
 
