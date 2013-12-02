@@ -112,7 +112,6 @@ module Fog
               :expects    => 200,
               :headers    => headers,
               :idempotent => idempotent,
-              :host       => @host,
               :method     => 'POST',
               :parser     => parser
             })
